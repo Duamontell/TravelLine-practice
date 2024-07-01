@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maks2\\source\\repos\\OrderManager\\OrderManager\\OrderManager.csproj",
+      "projectUniqueName": "C:\\Users\\maks2\\TravelLine-practice\\OrderManager\\OrderManager\\OrderManager.csproj",
       "projectName": "OrderManager",
-      "projectPath": "C:\\Users\\maks2\\source\\repos\\OrderManager\\OrderManager\\OrderManager.csproj",
+      "projectPath": "C:\\Users\\maks2\\TravelLine-practice\\OrderManager\\OrderManager\\OrderManager.csproj",
       "packagesPath": "C:\\Users\\maks2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maks2\\source\\repos\\OrderManager\\OrderManager\\obj\\",
+      "outputPath": "C:\\Users\\maks2\\TravelLine-practice\\OrderManager\\OrderManager\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\maks2\\AppData\\Roaming\\NuGet\\NuGet.Config",

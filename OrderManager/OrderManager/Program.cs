@@ -1,5 +1,5 @@
 ﻿PrintApplicationName();
-DateTime orderDate = DateTime.Now.AddDays(3);
+DateTime orderDate = DateTime.Now.AddDays( 3 );
 
 while ( true )
 {
@@ -13,7 +13,7 @@ while ( true )
     switch ( userCommand )
     {
         case "Yes":
-            Console.WriteLine($"{userName}, your order {userProduct} in quantity {productCount} has been placed! Expect delivery to {userAddress} by {orderDate}" );
+            Console.WriteLine( $"{userName}, your order {userProduct} in quantity {productCount} has been placed! Expect delivery to {userAddress} by {orderDate}" );
             return;
         case "No":
             break;
