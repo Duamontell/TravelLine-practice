@@ -7,8 +7,10 @@ while ( true )
     decimal productCount = ReadCount();
     string userName = ReadUsername();
     string userAddress = ReadAddress();
+
     Console.WriteLine( $"{userName}, You have ordered {productCount} {userProduct} for {userAddress}, is that correct? " );
     PrintAnswer();
+
     string userCommand = Console.ReadLine();
     switch ( userCommand )
     {
@@ -82,5 +84,3 @@ static string ReadAddress()
 void PrintAnswer()
 {
     Console.WriteLine( "[Yes]" );
-    Console.WriteLine( "[No]" );
-}
