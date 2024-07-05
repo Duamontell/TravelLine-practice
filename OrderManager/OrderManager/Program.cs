@@ -83,4 +83,5 @@ static string ReadAddress()
 
 void PrintAnswer()
 {
-    Console.WriteLine( "[Yes]" );
+    Console.WriteLine( "Yes/No" );
+}
