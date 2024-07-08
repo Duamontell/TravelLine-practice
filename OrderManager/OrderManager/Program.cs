@@ -4,24 +4,18 @@ DateTime orderDate = DateTime.Now.AddDays( 3 );
 while ( true )
 {
     string userProduct = ReadProduct();
-    decimal productCount = ReadCount();
+    int productCount = ReadCount();
     string userName = ReadUsername();
     string userAddress = ReadAddress();
 
     Console.WriteLine( $"{userName}, You have ordered {productCount} {userProduct} for {userAddress}, is that correct? " );
     PrintAnswer();
 
-    string userCommand = Console.ReadLine();
-    switch ( userCommand )
+    string userCommand = ReadCommand();
+
+    if ( userCommand == "yes" )
     {
-        case "Yes":
-            Console.WriteLine( $"{userName}, your order {userProduct} in quantity {productCount} has been placed! Expect delivery to {userAddress} by {orderDate}" );
-            return;
-        case "No":
-            break;
-        default:
-            Console.WriteLine( "Unknown command" );
-            break;
+        Console.WriteLine( $"{userName}, your order {userProduct} in quantity {productCount} has been placed! Expect delivery to {userAddress} by {orderDate}" );
     }
 }
 
@@ -43,11 +37,11 @@ static string ReadProduct()
     return product;
 }
 
-static decimal ReadCount()
+static int ReadCount()
 {
     Console.Write( "How much do you want: " );
-    decimal count;
-    while ( !decimal.TryParse( Console.ReadLine(), out count ) )
+    int count;
+    while ( !int.TryParse( Console.ReadLine(), out count ) )
     {
         Console.Write( "You have entered an incorrect value for the quantity, please enter a number: " );
     }
@@ -79,6 +73,24 @@ static string ReadAddress()
     }
 
     return address;
+}
+
+static string ReadCommand()
+{
+    while ( true )
+    {
+        string command = Console.ReadLine().ToLower();
+        switch ( command )
+        {
+            case "yes":
+                return "yes";
+            case "no":
+                return "no";
+            default:
+                Console.WriteLine( "Unknown command" );
+                break;
+        }
+    }
 }
 
 void PrintAnswer()
