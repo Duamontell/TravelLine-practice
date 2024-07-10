@@ -16,6 +16,7 @@ while ( true )
     if ( userCommand == "yes" )
     {
         Console.WriteLine( $"{userName}, your order {userProduct} in quantity {productCount} has been placed! Expect delivery to {userAddress} by {orderDate}" );
+        return;
     }
 }
 
