@@ -121,7 +121,6 @@ public static class AccommodationsProcessor
                     throw new ArgumentException( "Invalid Booking ID" );
                 }
 
-                /*Guid id = Guid.Parse( parts[ 1 ] );*/
                 FindBookingByIdCommand findCommand = new( _bookingService, id );
                 findCommand.Execute();
                 break;
