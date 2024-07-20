@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\maks2\\travelline-practice\\debug\\accomodations\\accommodations\\dto\\currencydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\dto\\currencydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|c:\\users\\maks2\\travelline-practice\\debug\\accomodations\\accommodations\\accommodationsprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DCE5FA7-05A0-41C4-BD1B-1316ED6C9F67}|Accommodations\\Accommodations.csproj|solutionrelative:accommodations\\accommodationsprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -155,19 +159,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CurrencyDto.cs",
+              "DocumentMoniker": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\Accommodations\\Dto\\CurrencyDto.cs",
+              "RelativeDocumentMoniker": "Accommodations\\Dto\\CurrencyDto.cs",
+              "ToolTip": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\Accommodations\\Dto\\CurrencyDto.cs",
+              "RelativeToolTip": "Accommodations\\Dto\\CurrencyDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-18T16:58:43.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AccommodationsProcessor.cs",
               "DocumentMoniker": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\Accommodations\\AccommodationsProcessor.cs",
               "RelativeDocumentMoniker": "Accommodations\\AccommodationsProcessor.cs",
-              "ToolTip": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\Accommodations\\AccommodationsProcessor.cs",
-              "RelativeToolTip": "Accommodations\\AccommodationsProcessor.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAYwJEAAAAWAAAA",
+              "ToolTip": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\Accommodations\\AccommodationsProcessor.cs*",
+              "RelativeToolTip": "Accommodations\\AccommodationsProcessor.cs*",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAYwDcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-18T11:28:14.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FindBookingByIdCommand.cs",
               "DocumentMoniker": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\Accommodations\\Commands\\FindBookingByIdCommand.cs",
               "RelativeDocumentMoniker": "Accommodations\\Commands\\FindBookingByIdCommand.cs",
@@ -175,12 +192,11 @@
               "RelativeToolTip": "Accommodations\\Commands\\FindBookingByIdCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-17T14:27:50.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-17T14:27:50.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BookingService.cs",
               "DocumentMoniker": "C:\\Users\\maks2\\TravelLine-practice\\Debug\\Accomodations\\Accommodations\\BookingService.cs",
               "RelativeDocumentMoniker": "Accommodations\\BookingService.cs",
@@ -188,8 +204,7 @@
               "RelativeToolTip": "Accommodations\\BookingService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAIEAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-16T14:31:54.604Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-16T14:31:54.604Z"
             }
           ]
         },

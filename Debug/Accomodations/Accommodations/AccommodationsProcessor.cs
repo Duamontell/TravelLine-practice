@@ -57,10 +57,11 @@ public static class AccommodationsProcessor
                 }
 
                 // ƒобавил проверку валидности валюты
-                if ( !Enum.TryParse( parts[ 5 ], true, out CurrencyDto currency ) )
+                /*if ( !Enum.TryParse( parts[ 5 ], true, out CurrencyDto currency ) )
                 {
                     throw new ArgumentException( "Currency parsing error" );
-                }
+                }*/
+                CurrencyDto currency = ( CurrencyDto )Enum.Parse( typeof( CurrencyDto ), parts[ 5 ], true );
 
                 BookingDto bookingDto = new()
                 {
