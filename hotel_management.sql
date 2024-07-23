@@ -5,8 +5,8 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='rooms')
 		room_id	INT IDENTITY(1,1) NOT NULL,
 		room_number NVARCHAR(10) NOT NULL, 
 		room_type NVARCHAR(50) NOT NULL,
-		price_per_night DECIMAL(10, 2) NOT NULL,
-		availability BIT NOT NULL -- 1 - номер занят, 0 - номер свободен
+		price_per_night MONEY NOT NULL,
+		availability BIT NOT NULL -- 0 - номер занят, 1 - номер свободен
 
 		CONSTRAINT PK_rooms_room_id PRIMARY KEY (room_id)
 	);
@@ -100,31 +100,29 @@ INSERT INTO dbo.rooms_to_facilities VALUES
     (7, 1);
 
 -- Найдите все доступные номера для бронирования сегодня.
-SELECT * FROM dbo.rooms WHERE availability = 0;
+SELECT rooms.*  FROM dbo.rooms
+	LEFT JOIN dbo.bookings ON rooms.room_id = bookings.room_id AND GETDATE() BETWEEN check_in_date AND check_out_date
+	WHERE bookings.booking_id IS NULL
 
 -- Найдите всех клиентов, чьи фамилии начинаются с буквы "S".
 SELECT * FROM dbo.customers WHERE last_name LIKE 'S%';
 
 -- Найдите все бронирования для определенного клиента (по имени или электронному адресу).
-SELECT * FROM dbo.bookings 
-	JOIN dbo.customers 
-	ON bookings.customer_id = customers.customer_id
+SELECT bookings.* FROM dbo.bookings 
+	JOIN dbo.customers ON bookings.customer_id = customers.customer_id
 	WHERE customers.first_name = 'Elena' OR customers.email = 'elenaorlova@mail.ru.com';
 
 -- Найдите все бронирования для определенного номера.
-SELECT * FROM dbo.bookings 
-	JOIN dbo.rooms
-	ON bookings.room_id = rooms.room_id
+SELECT bookings.* FROM dbo.bookings 
+	JOIN dbo.rooms ON bookings.room_id = rooms.room_id
 	WHERE rooms.room_number = '101';
 
 -- Найдите все номера, которые не забронированы на определенную дату.
 SELECT * FROM dbo.rooms 
-	JOIN dbo.bookings
-	ON bookings.room_id = rooms.room_id
-	WHERE rooms.availability = 0 AND '2023-07-03' BETWEEN check_in_date AND check_out_date
+	JOIN dbo.bookings ON bookings.room_id = rooms.room_id
+	WHERE rooms.availability = 1 AND '2023-07-03' BETWEEN check_in_date AND check_out_date
 	
 SELECT * FROM dbo.rooms
-	LEFT JOIN dbo.bookings
-    ON rooms.room_id = bookings.room_id
+	LEFT JOIN dbo.bookings ON rooms.room_id = bookings.room_id
     AND '2023-04-04' BETWEEN bookings.check_in_date AND bookings.check_out_date
 	WHERE bookings.room_id IS NULL;
